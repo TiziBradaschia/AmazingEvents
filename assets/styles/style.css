@@ -1,0 +1,121 @@
+* {
+  padding: 0px !important;
+  margin: 0px !important;
+  box-sizing: border-box !important;
+  font-family: "Calibri", "Courier New", Courier;
+}
+body {
+  width: 100%;
+  width: 100%;
+
+
+}
+.container-fluid {
+  /* border: 2px dashed yellow; */
+  background: rgb(63,94,251);
+ 
+}
+header {
+  /* border: 2px dashed green; */
+  display: flex;
+  flex-direction: column;
+  background: rgb(252, 70, 214);
+  background: radial-gradient(
+    circle,
+    rgba(252, 70, 214, 1) 0%,
+    rgba(63, 94, 251, 1) 100%
+  );
+  color: whitesmoke;
+}
+nav {
+  /* border: 4px solid fuchsia; */
+  display: flex;
+  margin: 80px;
+  align-items: center;
+}
+.logoNav {
+  display: flex;
+  /* border: 2px solid blue; */
+  align-items: center;
+  flex-grow: 0.3;
+  flex-wrap: wrap;
+  width: 40%;
+}
+.logoNav > img {
+  width: 30%;
+}
+.botonesNav {
+  /* border: 2px solid rgb(255, 0, 0); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+  margin: 10px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 60%;
+}
+.btn-primary {
+
+  border-radius: 0px !important;
+}
+.bannerHeader {
+  /* border: 2px solid rgb(0, 217, 255); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerHeader > h1 {
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: 3px 2px 2px rgba(63, 94, 251, 1);
+  font-size: 70px;
+}
+.bannerHeader > h1:hover {
+  transform: scale(1.2);
+}
+.bannerHeader > a:link {
+  text-decoration: none;
+  filter: drop-shadow(-2px 2px 15px rgba(252, 70, 214, 1));
+  border-radius: 50%;
+  background-color: rgba(252, 70, 214, 1);
+}
+.bannerHeader > a > img {
+  width: 40px;
+  height: 40px;
+}
+.bannerHeader > a > img:hover {
+  transform: scale(1.6);
+}
+/* main{
+    
+    #fc46d6
+    #3f5efb 
+} */
+footer{
+    display: flex;
+    background: rgb(252, 70, 214);
+    color: whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    /* border:5px double #f1f2f5; */
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    }
+.ulFooter>li>a>img{
+    width: 30px;
+     filter: drop-shadow(10px 4px 10px #dbdde6); 
+
+}
+.ulFooter>li>a>img:hover{
+   transform: scale(1.6);
+
+}
+.divFooter>span{
+    font-weight: bold;
+    font-size: 30px;
+    color:#3f5efb !important;
+    filter: drop-shadow(10px 4px 10px #dbdde6); 
+}
