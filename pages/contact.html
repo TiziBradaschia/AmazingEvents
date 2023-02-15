@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link a Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon-AmazingEvents.ico"
+      type="image/x-icon"
+    />
+    <!-- Link a Hojas estilos -->
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <!-- Link a Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Amazing Events</title>
+  </head>
+  <body class="container-fluid">
+    <!--<div class="container-fluid">-->
+      <header>
+        <nav>
+          <div class="logoNav">
+            <img src="../assets/img/Logo Amazing Events.png" alt="Logo" />
+          </div>
+          <div class="botonesNav">
+            <button
+              type="submit"
+              class="btn btn-primary btn-md"
+              onclick='window.location="../index.html"'
+            >
+              Home
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary btn-sm"
+              onclick='window.location="../pages/upcommingEvents.html"'
+            >
+              Upcomming Events
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary btn-md"
+              onclick='window.location="../pages/pastEvents.html"'
+            >
+              Past Events
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary btn-md active"
+              onclick='window.location="#"'
+            >
+              Contact
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary btn-md"
+              onclick='window.location="../pages/stats.html"'
+            >
+              Stats
+            </button>
+          </div>
+        </nav>
+        <div class="bannerHeader">
+                 <a href="../pages/pastEvents.html"><img src="../assets/img/chevronLeft.png" alt="arrow back"></a> 
+                 <h1> Contact </h1> 
+                 <a href="../pages/stats.html"><img src="../assets/img/chevronRight.png" alt="arrow next"></a>
+        </div>
+      </header>
+      <main class="conteinerContacto">
+        <form class="formularioContacto" action="#">
+            <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Fill in your name">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group">
+            <label for="Email">Email address</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="Mensagge">Mensagge</label>
+            <textarea class="form-control" id="Mensagge" placeholder="Leave your message here"></textarea>
+          </div>
+        <div class="botonFormulario"> 
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+        </form>
+      </main>
+      <footer class="py-3 my-1 "><!--class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">-->
+        <ul class="ulFooter nav col-md-4 justify-content-start list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"><img src="../assets/img/instagram-logo .png" alt="instragram"/></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><img src="../assets/img/./facebook-circle-logo.png" alt="facebook"/></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><img src="../assets/img/./whatsapp-logo.png" alt="whatsapp"/></a>
+          </li>
+        </ul>
+        <div class="divFooter col-md-4 d-flex justify-content-end">
+          <span class="mb-3 mb-md-0 text-muted">Cohort</span>
+        </div>
+      </footer>
+   <!--</div>-->
+
+    <!--  Script de Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!--  Vinculo a JavaScript-->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

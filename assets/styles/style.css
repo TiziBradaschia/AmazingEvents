@@ -1,3 +1,5 @@
+/*Colores  #fc46d6
+    #3f5efb */
 * {
   padding: 0px !important;
   margin: 0px !important;
@@ -5,15 +7,16 @@
   font-family: "Calibri", "Courier New", Courier;
 }
 body {
-  width: 100%;
-  width: 100%;
-
-
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 .container-fluid {
   /* border: 2px dashed yellow; */
-  background: rgb(63,94,251);
- 
+  background: rgb(63, 94, 251);
+  
 }
 header {
   /* border: 2px dashed green; */
@@ -26,6 +29,7 @@ header {
     rgba(63, 94, 251, 1) 100%
   );
   color: whitesmoke;
+ height: 20%;
 }
 nav {
   /* border: 4px solid fuchsia; */
@@ -57,8 +61,18 @@ nav {
   width: 60%;
 }
 .btn-primary {
-
-  border-radius: 0px !important;
+  border-radius: 15px 0px !important;
+  border: 2px double white !important;
+ 
+  }
+.btn-primary:hover {
+  border-radius: 0px 15px !important;
+   background-color: white!important;
+  color:blue!important;
+}
+.active:hover {
+  border-radius: 15px 0px !important;
+  
 }
 .bannerHeader {
   /* border: 2px solid rgb(0, 217, 255); */
@@ -88,34 +102,138 @@ nav {
 .bannerHeader > a > img:hover {
   transform: scale(1.6);
 }
-/* main{
+ main{
     
-    #fc46d6
-    #3f5efb 
-} */
-footer{
     display: flex;
-    background: rgb(252, 70, 214);
-    color: whitesmoke;
-    margin: 20px;
-    padding: 20px;
-    /* border:5px double #f1f2f5; */
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-items:center;
-    }
-.ulFooter>li>a>img{
-    width: 30px;
-     filter: drop-shadow(10px 4px 10px #dbdde6); 
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+   
+} 
+.conteinerCheckbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  /* border: 2px solid red; */
+}
+.conteinerCards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   /* border: 2px solid yellow; */
+  gap:20px;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+
+.card{
+  height:20rem !important;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.card-img-top{
+   height:50%;
+}
+.conteinerContacto{
+  align-items: center;
+  height: 70% ;
+  justify-content: center;
+/* border: 2px solid white; */
+}
+.formularioContacto{
+  display: flex;
+  flex-direction: column;
+  width: 40% ;
+  gap:20px;
+  /* border: 2px solid red; */
+  justify-content: center;
+}
+.formularioContacto>.form-group>label{
+  font-weight: bold;
+  font-size: 30px;
+  
+}
+.botonFormulario{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainDetails{
+  display: flex;
+  border: 5px solid black;
+ justify-content: center;
+}
+.conteinerDetails{
+  display: flex;
+justify-content: center;
+align-items: center;
+  background-color: rgb(0, 255, 255);
+  width:60%;
+  height: 100%;
+  border: 5px solid rgb(0, 255, 13);
+}
+.cardDetails{
+  display: flex;
+   border:2px solid red;
+flex-direction: row;
+
+justify-content: center;
+align-items: center;
+
 
 }
-.ulFooter>li>a>img:hover{
-   transform: scale(1.6);
+.img-details{
+display: flex;
+flex-direction: column;
+width: 80%;
+justify-content: center;
+align-items: center;
 
 }
-.divFooter>span{
-    font-weight: bold;
-    font-size: 30px;
-    color:#3f5efb !important;
-    filter: drop-shadow(10px 4px 10px #dbdde6); 
+.img-details>img{
+width: 90%;
+height: 90%;}
+
+.body-details{
+display: flex;
+flex-direction: column;
+border: 2px solid blue;
+align-items: center;
+width: 80%;
+justify-content: center;
+}
+.card-title{
+  font-size: 50px;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  background: rgb(252, 70, 214);
+  color: whitesmoke;
+  margin: 20px;
+  padding: 20px;
+  /* border:5px double #f1f2f5; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+.ulFooter > li > a > img {
+  width: 30px;
+  filter: drop-shadow(10px 4px 10px #dbdde6);
+}
+.ulFooter > li > a > img:hover {
+  transform: scale(1.6);
+}
+.divFooter > span {
+  font-weight: bold;
+  font-size: 30px;
+  color: #3f5efb !important;
+  filter: drop-shadow(10px 4px 10px #dbdde6);
 }
